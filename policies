@@ -1,0 +1,26 @@
+policy.csv: |
+    p, role:org-admin, applications, *, */*, allow
+    p, role:org-admin, projects, *, */*, allow
+    p, role:org-admin, clusters, get, *, allow
+    p, role:org-admin, repositories, get, *, allow
+    p, role:org-admin, repositories, create, *, allow
+    p, role:org-admin, repositories, update, *, allow
+    p, role:org-admin, repositories, delete, *, allow
+    p, role:org-admin, gpgkeys, get, *, allow
+    p, role:org-admin, logs, get, *, allow
+    p, role:org-admin, exec, create, */*, allow
+    p, role:developers, applications, get, */*, allow
+    p, role:developers, applications, action/apps/Deployment/restart, */*, allow
+    p, role:developers, logs, get, *, allow
+    g, john, role:org-admin
+    g, timi, role:org-admin
+    g, samuel, role:org-admin
+    g, toba, role:org-admin
+    g, ayomide, role:org-admin
+    g, ralph, role:developers
+    g, ezekiel, role:developers
+    g, chibuike, role:developers
+    g, moses, role:developers
+    g, itinu, role:developers
+    g, sola, role:developers
+    g, developers, role:developers
